@@ -1,6 +1,12 @@
-# ExTest
+# USTGlobalTest
+This project was generated to solve a programing exercise for USTGlobal
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.0.
+## Installation
+Project contains several dependencies including:
+- Angular Material
+- HamerJs
+
+Remember to `npm` install before starting the project
 
 ## Development server
 
