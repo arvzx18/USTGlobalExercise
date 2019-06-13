@@ -24,7 +24,7 @@ export class TableComponent implements OnInit {
   constructor(private service: GetJSONService, private datePipe:DatePipe) { }
 
   ngOnInit() {
-    this.dataSource.paginator = this.paginator;
+    // this.dataSource.paginator = this.paginator;
   }
 }
 
