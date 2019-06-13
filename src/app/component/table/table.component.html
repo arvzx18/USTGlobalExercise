@@ -1,0 +1,39 @@
+<div class="mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource">
+
+      <ng-container matColumnDef="client">
+        <th mat-header-cell *matHeaderCellDef> Client</th>
+        <td mat-cell *matCellDef="let element"> {{ (element.client != null) ? element.client : "--"  }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="matter">
+        <th mat-header-cell *matHeaderCellDef> Matter #</th>
+        <td mat-cell *matCellDef="let element"> {{ (element.matter != null) ? element.matter : "--"  }} </td>
+      </ng-container>
+  
+      <ng-container matColumnDef="matterName">
+        <th mat-header-cell *matHeaderCellDef> Matter Name</th>
+        <td mat-cell *matCellDef="let element"> {{ (element.matterName != null) ? element.matterName : "--"  }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="filing">
+        <th mat-header-cell *matHeaderCellDef> Filing</th>
+        <td mat-cell *matCellDef="let element"> {{ (element.filing != null) ? element.filing : "--"  }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="inPrep">
+        <th mat-header-cell *matHeaderCellDef> InPrep</th>
+        <td mat-cell *matCellDef="let element"> {{ (element.inPrep != null) ? element.inPrep : "--"  }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="lastModified">
+        <th mat-header-cell *matHeaderCellDef> Last lastModified</th>
+        <td mat-cell *matCellDef="let element"> {{ (element.lastModified != null) ? element.lastModified : "--"  }} </td>
+      </ng-container>
+  
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+    <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+  </div>

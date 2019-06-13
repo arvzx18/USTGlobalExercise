@@ -1,0 +1,20 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.container {
+    padding: 5% 15%;
+  }
+
+.title {
+    font-size: 1.5em;
+    color:gray;
+    float: left;
+}
+
+.btn-create {
+    float:right;
+}
+
+.mat-chip-list {
+    float: left;
+    padding-left: 10px;
+}
